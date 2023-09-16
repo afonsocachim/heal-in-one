@@ -77,7 +77,7 @@ export default function MarkdownPage() {
 
 	if (error) return <div>{JSON.stringify(error)}</div>;
 	if (!data) return <div>Loading...</div>;
-	const tokenArr = data as Token[];
+	const tokenArr = data;
 	const percentageDone = (CurQuestionPos / tokenArr.length) * 100;
 	const percentageRight = Math.round((TotalRight / tokenArr.length) * 100);
 	const questionsFinished = CurQuestionPos >= tokenArr.length;
