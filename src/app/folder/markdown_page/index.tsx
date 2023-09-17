@@ -84,7 +84,6 @@ export default function MarkdownPage() {
 		["/api/get_study_array", pathList],
 		([url, token]) => fetcher(url as unknown as URL, token),
 	);
-	console.log("data.length", data.length);
 
 	if (error) return <div>{JSON.stringify(error)}</div>;
 	if (!data)
@@ -97,6 +96,7 @@ export default function MarkdownPage() {
 				py="10"
 			/>
 		);
+	console.log("data.length", data.length);
 	const tokenArr = data;
 	const percentageDone = (CurQuestionPos / tokenArr.length) * 100;
 	const percentageRight = Math.round((TotalRight / tokenArr.length) * 100);
