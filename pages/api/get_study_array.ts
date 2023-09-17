@@ -29,7 +29,6 @@ export default async function handler(
 		"utf8",
 	);
 	// const parsed = parser(fileContents);
-	const lineArr = fileContents.split("\r\n");
 
-	res.status(200).json(lineArr);
+	res.status(200).json(fileContents);
 }
