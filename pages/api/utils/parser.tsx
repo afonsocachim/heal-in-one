@@ -3,11 +3,11 @@ import { marked } from "marked";
 const description = {
 	name: "cloze",
 	level: "inline", // Is this a block-level or inline-level tokenizer?
-	start(src) {
+	start(src: any) {
 		const result2 = src.match(/\{\{c/)?.index;
 		return result2;
 	}, // Hint to Marked.js to stop and check for a match
-	tokenizer(src, tokens) {
+	tokenizer(src: any) {
 		const rule2 = /^\{\{c:([^{]*)\}\}/; // Regex for the complete token, anchor to string start
 		// const rule2 = /^\{\{c(\d+)::([^{]*)\}\}/; // Regex for the complete token, anchor to string start
 		const match = rule2.exec(src);
@@ -21,17 +21,17 @@ const description = {
 			};
 		}
 	},
-	renderer(token) {
+	renderer(token: any) {
 		return `${token}`;
 	},
 	childTokens: ["dt", "dd"], // Any child tokens to be visited by walkTokens
 };
 
-function walkTokens(token) {
+function walkTokens(token: any) {
 	// Post-processing on the completed token tree
 	if (token.type === "strong") {
 		token.text += " walked";
-		token.tokens = this.Lexer.lexInline(token.text);
+		token.tokens = (this as unknown as any).Lexer.lexInline(token.text);
 	}
 }
 marked.use({ extensions: [description], walkTokens });
