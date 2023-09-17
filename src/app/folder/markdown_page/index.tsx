@@ -192,7 +192,7 @@ export default function MarkdownPage() {
 							</Box>
 							<Flex direction={{ base: "column", md: "row" }}>
 								{questionsFinished && (
-									<Box pr="2">
+									<Box pb="2" pr="2">
 										<Button
 											onClick={() => {
 												setIsQuestion(true);
