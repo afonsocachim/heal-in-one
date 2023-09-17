@@ -98,7 +98,8 @@ export default function MarkdownPage() {
 			/>
 		);
 	console.log("data.length", data.length);
-	const lineArr = data.split("\r\n") as string[];
+	console.log("data", data);
+	const lineArr = data.split("\n") as string[];
 	console.log("lineArr:", lineArr);
 	const filtered = lineArr
 		.filter((s) => s !== "")
