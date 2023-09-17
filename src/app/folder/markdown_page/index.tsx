@@ -81,10 +81,9 @@ export default function MarkdownPage() {
 	const pathList = slugList.map((i) => decodeURI(i));
 	console.log("pathList:", pathList);
 	const { data, error } = useSWR(
-		["/api/get_study_array", pathList],
+		["/api/get_parsed_markdown", pathList],
 		([url, token]) => fetcher(url as unknown as URL, token),
 	);
-
 	if (error) return <div>{JSON.stringify(error)}</div>;
 	if (!data)
 		return (
