@@ -2,15 +2,8 @@ import path from "path";
 import { promises as fs } from "fs";
 import { NextApiRequest, NextApiResponse } from "next";
 import { parser } from "./utils/parser";
-
-const joinPaths = (curPath: string, futurePaths: string[]): string => {
-	if (futurePaths.length === 0) return curPath;
-	const localFuturePaths = [...futurePaths];
-	const pathToAdd = localFuturePaths.shift();
-	if (!pathToAdd) throw Error();
-	const newPath = path.join(curPath, pathToAdd);
-	return joinPaths(newPath, localFuturePaths);
-};
+import { joinPaths } from "./utils/joinPaths";
+import { shuffleArray } from "./utils/shuffleArray";
 
 export default async function handler(
 	req: NextApiRequest,
@@ -28,8 +21,13 @@ export default async function handler(
 		fileDirectory + `/${fileName}`,
 		"utf8",
 	);
-	// const parsed = parser(fileContents);
 	const lineArr = fileContents.split("\r\n");
+	// const filtered = lineArr
+	// 	.filter((s) => s !== "")
+	// 	.filter((s) => s.includes("{{c:"))
+	// 	.map((s) => s.replace("- ", ""));
+	// const parsed = filtered.map((s) => parser(s)[0]);
+	// const shuffled = shuffleArray(parsed);
 
 	res.status(200).json(lineArr);
 }
