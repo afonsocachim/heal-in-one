@@ -125,7 +125,7 @@ export default function MarkdownPage() {
 					)}
 					{CurQuestionPos < TokenArr.length && (
 						<>
-							<Flex flex="1" minH="300" justifyContent="center">
+							<Flex flex="1" minH="300" justifyContent="center" p="4">
 								{IsQuestion && (
 									<Box>
 										<TokenQuestionRenderer
