@@ -190,7 +190,7 @@ export default function MarkdownPage() {
 									Topic: {pathList[pathList.length - 1].split(".")[0]}
 								</Text>
 							</Box>
-							<Flex>
+							<Flex direction={{ base: "column", md: "row" }}>
 								{questionsFinished && (
 									<Box pr="2">
 										<Button
