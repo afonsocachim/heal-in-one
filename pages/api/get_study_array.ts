@@ -2,6 +2,7 @@ import path from "path";
 import { promises as fs } from "fs";
 import { NextApiRequest, NextApiResponse } from "next";
 import { parser } from "./utils/parser";
+import { shuffleArray } from "./utils/shuffleArray";
 
 const joinPaths = (curPath: string, futurePaths: string[]): string => {
 	if (futurePaths.length === 0) return curPath;

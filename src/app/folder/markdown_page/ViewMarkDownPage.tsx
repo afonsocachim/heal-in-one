@@ -57,6 +57,7 @@ export default function ViewMarkDownPage({ pathList }: { pathList: string[] }) {
 				py="10"
 			/>
 		);
+
 	const tokenArr = data as Token[];
 
 	return (
@@ -64,35 +65,41 @@ export default function ViewMarkDownPage({ pathList }: { pathList: string[] }) {
 			<Container alignItems="center" maxW="800px">
 				<Card>
 					<CardBody>
-						<Flex pb="6">
+						<Flex pb="6" direction={{ base: "column", md: "row" }}>
 							<Heading flex="1" fontSize="4xl">
 								{pathList[pathList.length - 1].split(".")[0]}
 							</Heading>
-							<Box px="2">
-								<Button
+							<Flex pt="2">
+								<Box pr="2">
+									<Button
+										onClick={() => {
+											const newPathList = pathList.slice(
+												0,
+												pathList.length - 1,
+											);
+											const pathString = `/folder/${newPathList.join(
+												"/",
+											)}?file-type=folder`;
+											console.log("newPathList:", pathString, newPathList);
+											router.replace(pathString);
+										}}
+									>
+										{"Go back"}
+									</Button>
+								</Box>
+								<IconButton
+									variant="outline"
+									colorScheme="blue"
+									aria-label="study"
+									fontSize="20px"
+									icon={<PiBookOpenTextLight />}
 									onClick={() => {
-										const newPathList = pathList.slice(0, pathList.length - 1);
-										const pathString = `/folder/${newPathList.join(
-											"/",
-										)}?file-type=folder`;
-										console.log("newPathList:", pathString, newPathList);
-										router.replace(pathString);
+										const newRouteString =
+											pathname + "?file-type=md&study=true";
+										router.push(newRouteString);
 									}}
-								>
-									{"Go back"}
-								</Button>
-							</Box>
-							<IconButton
-								variant="outline"
-								colorScheme="blue"
-								aria-label="study"
-								fontSize="20px"
-								icon={<PiBookOpenTextLight />}
-								onClick={() => {
-									const newRouteString = pathname + "?file-type=md&study=true";
-									router.push(newRouteString);
-								}}
-							/>
+								/>
+							</Flex>
 						</Flex>
 						<RenderTokenArray tokenArr={tokenArr} />
 						{/* <JsonView data={tokenArr} /> */}

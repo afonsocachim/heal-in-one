@@ -59,16 +59,6 @@ export default function MarkdownPage() {
 	const router = useRouter();
 	const pathname = usePathname();
 
-	console.log(
-		"Changes:",
-		"IsQuestion:",
-		IsQuestion,
-		"CurQuestionPos:",
-		CurQuestionPos,
-		"TotalRight:",
-		TotalRight,
-	);
-
 	React.useEffect(() => {
 		setIsQuestion(true);
 	}, [CurQuestionPos]);
@@ -97,21 +87,14 @@ export default function MarkdownPage() {
 				py="10"
 			/>
 		);
-	console.log("data.length", data.length);
-	console.log("data", data);
 	const lineArr = data.split("\n") as string[];
-	console.log("lineArr:", lineArr);
 	const filtered = lineArr
 		.filter((s) => s !== "")
 		.filter((s) => s.includes("{{c:"))
 		.map((s) => s.replace("- ", ""));
-	console.log("filtered:", filtered);
 	const parsed = filtered.map((s) => parser(s)[0]);
-	console.log("parsed:", parsed);
 	const shuffled = shuffleArray(parsed);
-	console.log("shuffled:", shuffled);
-	const tokenArr = shuffled;
-	console.log("tokenArr:", tokenArr);
+	const tokenArr = shuffled as any[];
 
 	const percentageDone = (CurQuestionPos / tokenArr.length) * 100;
 	const percentageRight = Math.round((TotalRight / tokenArr.length) * 100);
