@@ -57,6 +57,16 @@ export default function MarkdownPage() {
 	const router = useRouter();
 	const pathname = usePathname();
 
+	console.log(
+		"Changes:",
+		"IsQuestion:",
+		IsQuestion,
+		"CurQuestionPos:",
+		CurQuestionPos,
+		"TotalRight:",
+		TotalRight,
+	);
+
 	React.useEffect(() => {
 		setIsQuestion(true);
 	}, [CurQuestionPos]);
@@ -69,14 +79,24 @@ export default function MarkdownPage() {
 	const slugList = params.slug;
 	if (!Array.isArray(slugList)) throw Error();
 	const pathList = slugList.map((i) => decodeURI(i));
-	console.log("pathList", pathList);
+	console.log("pathList:", pathList);
 	const { data, error } = useSWR(
 		["/api/get_study_array", pathList],
 		([url, token]) => fetcher(url as unknown as URL, token),
 	);
+	console.log("data.length", data.length);
 
 	if (error) return <div>{JSON.stringify(error)}</div>;
-	if (!data) return <div>Loading...</div>;
+	if (!data)
+		return (
+			<Box
+				bgColor="blue.100"
+				w="100%"
+				minH="100vh"
+				alignItems="center"
+				py="10"
+			/>
+		);
 	const tokenArr = data;
 	const percentageDone = (CurQuestionPos / tokenArr.length) * 100;
 	const percentageRight = Math.round((TotalRight / tokenArr.length) * 100);

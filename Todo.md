@@ -1,4 +1,3 @@
-- Adicionar botão para retry no review screen
 - Solve nested file structure so that we don't have to rerun the filetreeJSONcreator
 - Adicionar funcionalidade de suportar imagens
 - - Render de markdown bonito
@@ -23,4 +22,6 @@
 - Colocar mais bonita a folder page
 - Adicionar botão de voltar à folder page
 - Criar botão study screen
-- Fazer markdown files com pdfs
+- Fazer markdown files
+- Adicionar botão para retry no review screen
+- Disable errors with eslint or typescript

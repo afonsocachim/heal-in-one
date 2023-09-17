@@ -47,7 +47,16 @@ export default function ViewMarkDownPage({ pathList }: { pathList: string[] }) {
 	);
 
 	if (error) return <div>{JSON.stringify(error)}</div>;
-	if (!data) return <div>Loading...</div>;
+	if (!data)
+		return (
+			<Box
+				bgColor="blue.100"
+				w="100%"
+				minH="100vh"
+				alignItems="center"
+				py="10"
+			/>
+		);
 	const tokenArr = data as Token[];
 
 	return (

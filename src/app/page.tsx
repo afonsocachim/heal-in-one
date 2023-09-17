@@ -2,13 +2,14 @@
 
 import { MedicineSVG } from "@/components/medicine_svg";
 import { Container, Stack, Box, Heading, Text, Button } from "@chakra-ui/react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function HomePage() {
 	const router = useRouter();
 	const routeString = "/folder/ACLS?file-type=folder";
 	return (
-		<Container maxW={"7xl"}>
+		<Container maxW={"7xl"} p="4">
 			<Stack
 				align={"center"}
 				spacing={{ base: 8, md: 10 }}
@@ -43,7 +44,7 @@ export default function HomePage() {
 					<Stack
 						spacing={{ base: 4, sm: 6 }}
 						direction={{ base: "column", sm: "row" }}
-						minW="400"
+						minW={{ base: 0, md: 400 }}
 					>
 						<Button
 							rounded={"full"}
@@ -53,7 +54,8 @@ export default function HomePage() {
 							colorScheme={"blue"}
 							bg={"blue.400"}
 							_hover={{ bg: "blue.500" }}
-							onClick={() => router.push(routeString)}
+							as={Link}
+							href={routeString}
 						>
 							Get started with ACLS
 						</Button>

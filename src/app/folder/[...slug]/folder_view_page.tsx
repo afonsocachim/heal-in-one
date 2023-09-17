@@ -55,7 +55,16 @@ export const FolderViewPage = () => {
 		([url, token]) => fetcher(url as unknown as URL, token),
 	);
 	if (error) return <div>{JSON.stringify(error)}</div>;
-	if (!data) return <div>Loading...</div>;
+	if (!data)
+		return (
+			<Box
+				bgColor="blue.100"
+				w="100%"
+				minH="100vh"
+				alignItems="center"
+				py="10"
+			/>
+		);
 	const folder = data as Folder;
 
 	return (
@@ -100,12 +109,7 @@ export const FolderViewPage = () => {
 										);
 									const routeString = `${pathname}/${child.name}?file-type=md`;
 									return (
-										<ListItem
-											key={index}
-											onClick={() => router.push(routeString)}
-											py="2"
-											fontWeight={400}
-										>
+										<ListItem key={index} py="2" fontWeight={400}>
 											<ChakraLink as={Link} href={routeString} color="blue.500">
 												{child.name.split(".")[0]}
 											</ChakraLink>
