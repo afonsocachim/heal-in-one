@@ -99,7 +99,6 @@ export const FolderViewPage = () => {
 											</Box>
 										);
 									const routeString = `${pathname}/${child.name}?file-type=md`;
-									router.prefetch(routeString);
 									return (
 										<ListItem
 											key={index}
