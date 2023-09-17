@@ -29,6 +29,8 @@ import "react-json-view-lite/dist/index.css";
 import ViewMarkDownPage from "./ViewMarkDownPage";
 import { TokenQuestionRenderer } from "./token_question_renderer";
 import { TokenAnswerRenderer } from "./token_answer_renderer";
+import { shuffleArray } from "../../../../pages/api/utils/shuffleArray";
+import { parser } from "../../../../pages/api/utils/parser";
 
 //Write a fetcher function to wrap the native fetch function and return the result of a call to url in json format
 const fetcher = (url: URL, pathList: string[]) =>
@@ -96,7 +98,20 @@ export default function MarkdownPage() {
 			/>
 		);
 	console.log("data.length", data.length);
-	const tokenArr = data;
+	const lineArr = data.split("\r\n") as string[];
+	console.log("lineArr:", lineArr);
+	const filtered = lineArr
+		.filter((s) => s !== "")
+		.filter((s) => s.includes("{{c:"))
+		.map((s) => s.replace("- ", ""));
+	console.log("filtered:", filtered);
+	const parsed = filtered.map((s) => parser(s)[0]);
+	console.log("parsed:", parsed);
+	const shuffled = shuffleArray(parsed);
+	console.log("shuffled:", shuffled);
+	const tokenArr = shuffled;
+	console.log("tokenArr:", tokenArr);
+
 	const percentageDone = (CurQuestionPos / tokenArr.length) * 100;
 	const percentageRight = Math.round((TotalRight / tokenArr.length) * 100);
 	const questionsFinished = CurQuestionPos >= tokenArr.length;

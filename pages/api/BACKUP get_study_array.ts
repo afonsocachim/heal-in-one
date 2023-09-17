@@ -22,12 +22,12 @@ export default async function handler(
 		"utf8",
 	);
 	const lineArr = fileContents.split("\r\n");
-	// const filtered = lineArr
-	// 	.filter((s) => s !== "")
-	// 	.filter((s) => s.includes("{{c:"))
-	// 	.map((s) => s.replace("- ", ""));
-	// const parsed = filtered.map((s) => parser(s)[0]);
-	// const shuffled = shuffleArray(parsed);
+	const filtered = lineArr
+		.filter((s) => s !== "")
+		.filter((s) => s.includes("{{c:"))
+		.map((s) => s.replace("- ", ""));
+	const parsed = filtered.map((s) => parser(s)[0]);
+	const shuffled = shuffleArray(parsed);
 
 	res.status(200).json(lineArr);
 }
