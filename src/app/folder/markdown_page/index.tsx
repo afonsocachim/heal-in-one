@@ -54,14 +54,12 @@ export default function MarkdownPage() {
 	const [IsQuestion, setIsQuestion] = React.useState(true);
 	const [CurQuestionPos, setCurQuestionPos] = React.useState(0);
 	const [TotalRight, setTotalRight] = React.useState(0);
+
 	const params = useParams();
 	const searchParams = useSearchParams();
 	const router = useRouter();
 	const pathname = usePathname();
-
-	React.useEffect(() => {
-		setIsQuestion(true);
-	}, [CurQuestionPos]);
+	const [TokenArr, setTokenArr] = React.useState<any[]>([]);
 
 	if (!pathname) throw Error();
 	if (!router) throw Error();
@@ -71,11 +69,24 @@ export default function MarkdownPage() {
 	const slugList = params.slug;
 	if (!Array.isArray(slugList)) throw Error();
 	const pathList = slugList.map((i) => decodeURI(i));
-	console.log("pathList:", pathList);
 	const { data, error } = useSWR(
 		["/api/get_study_array", pathList],
 		([url, token]) => fetcher(url as unknown as URL, token),
 	);
+	React.useEffect(() => {
+		setIsQuestion(true);
+	}, [CurQuestionPos]);
+	React.useEffect(() => {
+		if (!data) return;
+		const lineArr = data.split("\n") as string[];
+		const filtered = lineArr
+			.filter((s) => s !== "")
+			.filter((s) => s.includes("{{c:"))
+			.map((s) => s.replace("- ", ""));
+		const parsed = filtered.map((s) => parser(s)[0]);
+		const shuffled = shuffleArray(parsed);
+		setTokenArr(shuffled);
+	}, [data]);
 	if (error) return <div>{JSON.stringify(error)}</div>;
 	if (!data)
 		return (
@@ -87,18 +98,10 @@ export default function MarkdownPage() {
 				py="10"
 			/>
 		);
-	const lineArr = data.split("\n") as string[];
-	const filtered = lineArr
-		.filter((s) => s !== "")
-		.filter((s) => s.includes("{{c:"))
-		.map((s) => s.replace("- ", ""));
-	const parsed = filtered.map((s) => parser(s)[0]);
-	const shuffled = shuffleArray(parsed);
-	const tokenArr = shuffled as any[];
 
-	const percentageDone = (CurQuestionPos / tokenArr.length) * 100;
-	const percentageRight = Math.round((TotalRight / tokenArr.length) * 100);
-	const questionsFinished = CurQuestionPos >= tokenArr.length;
+	const percentageDone = (CurQuestionPos / TokenArr.length) * 100;
+	const percentageRight = Math.round((TotalRight / TokenArr.length) * 100);
+	const questionsFinished = CurQuestionPos >= TokenArr.length;
 	if (isStudy) {
 		return (
 			<>
@@ -120,20 +123,20 @@ export default function MarkdownPage() {
 							</Flex>
 						</>
 					)}
-					{CurQuestionPos < tokenArr.length && (
+					{CurQuestionPos < TokenArr.length && (
 						<>
 							<Flex flex="1" minH="300" justifyContent="center">
 								{IsQuestion && (
 									<Box>
 										<TokenQuestionRenderer
-											tokenArr={tokenArr[CurQuestionPos].tokens}
+											tokenArr={TokenArr[CurQuestionPos].tokens}
 										/>
 									</Box>
 								)}
 								{!IsQuestion && (
 									<Box>
 										<TokenAnswerRenderer
-											tokenArr={tokenArr[CurQuestionPos].tokens}
+											tokenArr={TokenArr[CurQuestionPos].tokens}
 										/>
 									</Box>
 								)}
