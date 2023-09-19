@@ -16,11 +16,11 @@ Reserva-se **opióides** para doentes com contraindicações para {{c:AINEs}}, {
 
 ##### Náuseas e vómitos
 
-Em doentes com vómitos ou intolerância oral realiza-se **metoclopramida 10mg**
+Em doentes com vómitos ou intolerância oral realiza-se **metoclopramida 10mg IV**
 
 #### Análises e urinálise
 
-Obtém-se o **painel metabólico básico** para avaliar a {{c:função renal}}
+Obtém-se a **bioquímica** para avaliar a {{c:função renal}}
 Obtém-se a **urina II** para avaliar a presença de {{c:hematúria}} e sinais de {{c:infeção do trato urinário}}.
 
 - Embora a piúria possa estar presente mesmo na ausência de bacteriúria, a combinação de piúria e teste positivo para nitritos na análise de urina deve levantar a suspeita de uma infeção do trato urinário
@@ -41,7 +41,7 @@ Pede-se **avaliação urológica** se: litíase renal com > {{c:10}} mm, {{c:les
 
 Analgesia em SOS com AINEs, Paracetamol e/ou Opióides
 
-- P.e. Etodolac 400 mg máximo 3x/dia PO ou Ibuprofeno 600 mg máximo 3x/dia PO, Paracetamol 1000 mg máximo 4x/dia PO, Tramadol 100 mg + Metoclopramida 10 mg máximo 3x/dia PO
+- P.e. Etodolac 400 mg máximo 3x/dia PO ou Ibuprofeno 600 mg máximo 3x/dia PO, Paracetamol 1000 mg máximo 4x/dia PO, Tramadol 100 mg PO + Metoclopramida 10 mg máximo 3x/dia PO
 
 Realiza-se bloqueador alfa se litíase > {{c:5}} e < {{c:10}} mm
 
