@@ -41,11 +41,11 @@ Pede-se **avaliação urológica** se: litíase renal com > {{c:10}} mm, {{c:les
 
 Analgesia em SOS com AINEs, Paracetamol e/ou Opióides
 
-- P.e. Por via oral: Etodolac 400 mg máximo 3x/dia ou Ibuprofeno 600 mg máximo 3x/dia, Paracetamol 1000 mg máximo 4x/dia, Tramadol 100 mg + Metoclopramida 10 mg máximo 3x/dia
+- P.e. Etodolac 400 mg máximo 3x/dia PO ou Ibuprofeno 600 mg máximo 3x/dia PO, Paracetamol 1000 mg máximo 4x/dia PO, Tramadol 100 mg + Metoclopramida 10 mg máximo 3x/dia PO
 
 Realiza-se bloqueador alfa se litíase > {{c:5}} e < {{c:10}} mm
 
-- P.e. Tansulosina 0.4mg 1x/d
+- P.e. Tansulosina 0.4mg 1x/d PO
 
 #### Sinais de alarme
 
