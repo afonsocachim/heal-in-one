@@ -102,7 +102,7 @@ export default function ViewMarkDownPage({ pathList }: { pathList: string[] }) {
 							</Flex>
 						</Flex>
 						<RenderTokenArray tokenArr={tokenArr} />
-						<JsonView data={tokenArr} />
+						{/* <JsonView data={tokenArr} /> */}
 					</CardBody>
 				</Card>
 			</Container>
