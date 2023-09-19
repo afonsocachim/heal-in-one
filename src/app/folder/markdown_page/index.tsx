@@ -83,7 +83,12 @@ export default function MarkdownPage() {
 			.filter((s) => s !== "")
 			.filter((s) => s.includes("{{c:"))
 			.map((s) => s.replace("- ", ""));
-		const parsed = filtered.map((s) => parser(s)[0]);
+		const lowered = filtered.map((i) => {
+			const newI = i.trim();
+			console.log("I:, ", i);
+			return newI[0].toLowerCase() + newI.slice(1);
+		});
+		const parsed = lowered.map((s) => parser(s)[0]);
 		const shuffled = shuffleArray(parsed);
 		setTokenArr(shuffled);
 	}, [data]);
@@ -128,6 +133,10 @@ export default function MarkdownPage() {
 							<Flex flex="1" minH="300" justifyContent="center" p="4">
 								{IsQuestion && (
 									<Box>
+										Na{" "}
+										<Text as="span" fontWeight="bold">
+											cólica renal{" "}
+										</Text>
 										<TokenQuestionRenderer
 											tokenArr={TokenArr[CurQuestionPos].tokens}
 										/>
@@ -135,6 +144,10 @@ export default function MarkdownPage() {
 								)}
 								{!IsQuestion && (
 									<Box>
+										Na{" "}
+										<Text as="span" fontWeight="bold">
+											cólica renal{" "}
+										</Text>
 										<TokenAnswerRenderer
 											tokenArr={TokenArr[CurQuestionPos].tokens}
 										/>

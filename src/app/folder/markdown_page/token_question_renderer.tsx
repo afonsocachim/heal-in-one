@@ -69,7 +69,12 @@ export const TokenRenderBlock = ({ token }: { token: Token }) => {
 			</>
 		);
 	}
-
+	if (token.type === "strong")
+		return (
+			<Text as="span" textDecoration="underline">
+				<RenderChildren />
+			</Text>
+		);
 	if (token.type === "cloze")
 		return (
 			<Text as="span" bg="blue.100" px="1">

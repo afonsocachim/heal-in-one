@@ -6,8 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function HomePage() {
-	const router = useRouter();
-	const routeString = "/folder/ACLS?file-type=folder";
+	const routeString = "/folder/Xuxu?file-type=folder";
 	return (
 		<Container maxW={"7xl"} p="4">
 			<Stack

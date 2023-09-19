@@ -15,9 +15,9 @@ import { Token } from "marked";
 import "react-json-view-lite/dist/index.css";
 import React from "react";
 import { useRouter, usePathname } from "next/navigation";
-import "react-json-view-lite/dist/index.css";
 import { RenderTokenArray } from "./token_view_renderer";
 import { PiBookOpenTextLight } from "react-icons/pi";
+import { JsonView } from "react-json-view-lite";
 
 //Write a fetcher function to wrap the native fetch function and return the result of a call to url in json format
 const fetcher = (url: URL, pathList: string[]) =>
@@ -102,7 +102,7 @@ export default function ViewMarkDownPage({ pathList }: { pathList: string[] }) {
 							</Flex>
 						</Flex>
 						<RenderTokenArray tokenArr={tokenArr} />
-						{/* <JsonView data={tokenArr} /> */}
+						<JsonView data={tokenArr} />
 					</CardBody>
 				</Card>
 			</Container>

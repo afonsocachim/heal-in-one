@@ -1,12 +1,19 @@
+# Todo
+
+- Adicionar support para SVG
+- Passar folder e markdown para routes diferentes em vez de usar os url parameters
+- Adicionar support para bold inside cloze etc
+
+
 - Solve nested file structure so that we don't have to rerun the filetreeJSONcreator
 - Adicionar funcionalidade de suportar imagens
-- - Render de markdown bonito
+  -  Render de markdown bonito
   - Adicionar nested headings
 
 - Criar pasta com o nome de todos os documentos do ACLS
   - Alguns dos algoritmos não estão na página do ACLS aka stroke, eam, dispositivo de assistênci ventricular, diagrama de neuroprognóstico
 
-# Done
+## Done
 
 - Criar ACLS homepage
 - Criar página de visualização de pastas

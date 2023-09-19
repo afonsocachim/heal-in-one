@@ -3,7 +3,8 @@
 import {
 	Box,
 	Heading,
-	Link,
+	Image,
+	Link as ChakraLink,
 	OrderedList,
 	Text,
 	UnorderedList,
@@ -11,6 +12,7 @@ import {
 import { Token } from "marked";
 import "react-json-view-lite/dist/index.css";
 import React from "react";
+import Link from "next/link";
 import { decodeHtmlEntities } from "../../../../pages/api/utils/htmlEntities";
 
 const leftPadding = "6";
@@ -85,7 +87,12 @@ export const TokenRenderBlock = ({ token }: { token: Token }) => {
 		}
 		return (
 			<>
-				<Heading fontSize={fontSize} mt="4" mb="2">
+				<Heading
+					fontSize={fontSize}
+					mt="4"
+					mb="2"
+					id={token.text.replaceAll(/ /g, "_")}
+				>
 					<RenderChildren />
 				</Heading>
 			</>
@@ -137,10 +144,20 @@ export const TokenRenderBlock = ({ token }: { token: Token }) => {
 
 	if (token.type === "link") {
 		return (
-			<Link href={token.href} color="teal.500" isExternal wordBreak="break-all">
+			<ChakraLink
+				href={token.href}
+				color="teal.500"
+				isExternal
+				wordBreak="break-all"
+				as={Link}
+			>
 				<RenderChildren />
-			</Link>
+			</ChakraLink>
 		);
+	}
+
+	if (token.type === "image") {
+		return <Image src={"/markdown/" + token.href} alt={token.text} />;
 	}
 	if (token.type === "Space" || token.raw === "\n\n") return <Box h="0.5em" />;
 	return <React.Fragment>{(token as any).text}</React.Fragment>;

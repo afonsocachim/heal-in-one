@@ -29,6 +29,10 @@ For adult and adolescent victims, responders should perform compressions and res
 - Refer to the BLS/Cardiac
 - Arrest algorithm
 
+### Diagram
+
+![opioid diagram](opioid_od.svg)
+
 ### Links
 
 [CPR & ECC Guidelines Algorithms](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms)

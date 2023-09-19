@@ -79,13 +79,16 @@ export const FolderViewPage = () => {
 								</Heading>
 								<Button
 									onClick={() => {
-										if (pathList.length === 1) router.replace("/");
-										// const newPathList = pathList.slice(0, pathList.length - 1);
-										// const pathString = `/folder/${newPathList.join(
-										// 	"/",
-										// )}?file-type=folder`;
-										// console.log("newPathList:", pathString, newPathList);
-										// router.replace(pathString);
+										if (pathList.length === 1) {
+											router.replace("/");
+											return;
+										}
+										const newPathList = pathList.slice(0, pathList.length - 1);
+										const pathString = `/folder/${newPathList.join(
+											"/",
+										)}?file-type=folder`;
+										console.log("newPathList:", pathString, newPathList);
+										router.replace(pathString);
 									}}
 								>
 									{"Go back"}
@@ -94,19 +97,25 @@ export const FolderViewPage = () => {
 
 							<OrderedList>
 								{Object.values(folder.children).map((child, index) => {
-									if (child.isDir)
+									if (child.isDir) {
+										const routeString = `${pathname}/${child.name}?file-type=folder`;
 										return (
-											<Box key={index} as="div" bgColor="red">
-												<Link
-													href={{
-														pathname: pathname + "/" + child.name,
-														query: { isDir: true },
-													}}
+											<ListItem
+												key={index}
+												py="2"
+												fontWeight={400}
+												bgColor="gray.200"
+											>
+												<ChakraLink
+													as={Link}
+													href={routeString}
+													color="blue.500"
 												>
-													{child.name}
-												</Link>
-											</Box>
+													{child.name.split(".")[0]}
+												</ChakraLink>
+											</ListItem>
 										);
+									}
 									const routeString = `${pathname}/${child.name}?file-type=md`;
 									return (
 										<ListItem key={index} py="2" fontWeight={400}>
