@@ -16,7 +16,7 @@ Reserva-se **opióides** para doentes com contraindicações para {{c:AINEs}}, {
 
 ##### Náuseas e vómitos
 
-Em doentes com vómitos ou intolerância oral realiza-se **metoclopramida 10mg IV**
+Em doentes com vómitos ou intolerância oral realiza-se **metoclopramida 10mg IV*
 
 #### Análises e urinálise
 
