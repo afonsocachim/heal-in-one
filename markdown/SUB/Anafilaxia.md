@@ -16,3 +16,6 @@
   - Alteração do estado mental, ansiedade, apreensão, sensação de morte iminente, convulsões, dores de cabeça e confusão; as crianças pequenas podem ter alterações comportamentais súbitas (agarrar-se, chorar, ficar irritadas, deixar de brincar)
 - Oculares
   - Prurido periorbital, eritema e edema, lacrimejo e eritema conjuntival
+
+Fonte
+- [Tratamento asma emergente uptodate](https://uptodatefree.ir/image.htm?imageKey=EM%2F58346)
