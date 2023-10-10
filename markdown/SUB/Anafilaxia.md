@@ -38,13 +38,15 @@
 - Bolus rápido de solução salina normal: Tratar a hipotensão com uma infusão rápida de 1 a 2 litros IV. Repetir, se necessário. Podem ocorrer deslocações maciças de fluidos com perda grave de volume intravascular.
 - Vasopressores: Alguns doentes podem necessitar de um segundo vasopressor (para além da adrenalina). Todos os vasopressores devem ser administrados por bomba de infusão, com as doses tituladas continuamente de acordo com a pressão arterial e a frequência/função cardíaca e a oxigenação monitorizada por oximetria de pulso.
 
-Colocar o doente em posição reclinada, se tolerado, e elevar as extremidades inferiores.
+#### Monitorização
+- Monitorização hemodinâmica não invasiva contínua e de saturação periférica de O2
+- Monitorizar débito urinário se doente a receber ressuscitação com fluidos IV para hipotensão grave ou choque
+- Colocar o doente em posição reclinada, se tolerado, e elevar as extremidades inferiores.
 
 #### Terapêuticas adjuvantes
-Anti-histamínico H1: Considerar a administração de difenidramina 25 a 50 mg IV (apenas para alívio da urticária e do prurido).
-Anti-histamínico H2: Considerar a administração de ranitidina 50 mg IV.
-Glucocorticoide: Considerar a administração de metilprednisolona 125 mg IV.
-Monitorização: Deve ser efectuada uma monitorização hemodinâmica não invasiva contínua e uma monitorização da oximetria de pulso. O débito urinário deve ser monitorizado em doentes a receber ressuscitação com fluidos IV para hipotensão grave ou choque.
+- Anti-histamínico H1: Considerar a administração de difenidramina 25 a 50 mg IV (apenas para alívio da urticária e do prurido).
+- Anti-histamínico H2: Considerar a administração de ranitidina 50 mg IV.
+- Glucocorticoide: Considerar a administração de metilprednisolona 125 mg IV.
 
 ### Fontes
 - [Tratamento asma emergente uptodate](https://uptodatefree.ir/image.htm?imageKey=EM%2F58346)
