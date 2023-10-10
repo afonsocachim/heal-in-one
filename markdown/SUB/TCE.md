@@ -1,4 +1,4 @@
-## Doente com > 18 anos, com TCE
+![TCE_abordagem](TCE_abordagem.svg)
 
 ### Critérios para TAC-CE sem constraste
 
