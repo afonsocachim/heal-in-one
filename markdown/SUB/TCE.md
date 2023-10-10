@@ -14,6 +14,9 @@ Deve-se pedir hemograma completo, coagulação, ionograma, glicose, alcoolémia 
 - ≥ 2 episódios de vómito
 - ≥ 60 anos de idade
 
+- Coagulopatia
+- Antiagregação/Anticoagualação
+
 - Amnésia retrógrada ≥ 30 minutos pré-trauma
 - Mecanismo de alto impacto 
 - Acidente de viação, queda > 1,5 metros, etc.
@@ -23,9 +26,6 @@ Deve-se pedir hemograma completo, coagulação, ionograma, glicose, alcoolémia 
 - Comportamento alterado
   - Agitação excessiva, não cooperante, comportamento violento, etc.
 
-
-Coagulopatia
-Antiagregação/Anticoagualação
 
 ### Critérios para avaliação por neurocirurgia
 - Efeito de massa (compressão da cisterna basal ou deslocamento da linha média)
