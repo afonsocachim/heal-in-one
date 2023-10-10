@@ -50,3 +50,4 @@
 
 ### Fontes
 - [Tratamento asma emergente uptodate](https://uptodatefree.ir/image.htm?imageKey=EM%2F58346)
+- [Diagrama ressuscitation council UK](https://www.resus.org.uk/sites/default/files/2021-04/Anaphylaxis%20algorithm%202021.pdf)
