@@ -1,21 +1,25 @@
-## Diagnóstico de Sépsis
+## Critérios clínicos para anafilaxia
 
-- Pele / Mucosas
-  - Sensação de calor, eritema, prurido, urticária, edema
-- Respiratórios
-  - Congestão, rinorreia e esternutos
-- Laringe
-  - Disfonia, rouquidão, estridor
-- Vias aéreas inferiores
-  - Dispneia, tosse, pieira e cianose
-- Gastrointestinal
-  - Náuseas, dor abdominal, vómitos, diarreia e disfagia
-- Cardiovasculares
-  - Síncope , dor no peito, palpitações, taquicardia/bradicardia , hipotensão, visão em túnel, dificuldade em ouvir, incontinência urinária ou fecal e paragem cardíaca
-- Neurológicas
-  - Alteração do estado mental, ansiedade, apreensão, sensação de morte iminente, convulsões, dores de cabeça e confusão; as crianças pequenas podem ter alterações comportamentais súbitas (agarrar-se, chorar, ficar irritadas, deixar de brincar)
-- Oculares
-  - Prurido periorbital, eritema e edema, lacrimejo e eritema conjuntival
+Apenas necessário 1 dos seguintes com início dentro de minutos a horas, não é necessário cumprir estes critérios para tratar, apenas para servir de guia para o diagnóstico
+1. Exposição desconhecida a um antigénio, mas desenvolvimento rápido de urticária ou outros sintomas cutâneos/mucosos associados a qualquer um dos seguintes:
+  - Sintomas respiratórios
+  - Hipotensão
+  - Sinais disfunção de órgão
+2. Exposição provável a um antigénio e sintomas que envolvam quaisquer 2 dos seguintes sistemas corporais:
+  - Sintomas respiratórios
+  - Hipotensão
+  - Sinais disfunção de órgão
+  - Sintomas gastrointestinais
+  - Sintomas pele e mucosas
+3. Exposição conhecida a um antigénio e hipotensão
+
+### Lista sintomas
+
+- Pele e mucosas: erupção cutânea, prurido, eritema, urticária, inchaço da face, lábios, língua ou úvula
+- Respiratórios: Dispneia, pieira, estridor, hipoxemia, incapacidade de manter a permeabilidade; tosse persistente e/ou pigarro podem ser sintomas - anunciadores
+- Hipotensão: Sistólica inferior a 90 mm Hg ou uma diminuição superior a 30% em relação à linha de base
+- Gastrointestinais: cólicas dolorosas persistentes ou vómitos
+- Sinais de disfunção de órgão: hipotonia, síncope, incontinência
  
 ## Tratamento agudo - Abordagem ABCDE
 
@@ -51,3 +55,4 @@
 ### Fontes
 - [Tratamento asma emergente uptodate](https://uptodatefree.ir/image.htm?imageKey=EM%2F58346)
 - [Diagrama ressuscitation council UK](https://www.resus.org.uk/sites/default/files/2021-04/Anaphylaxis%20algorithm%202021.pdf)
+- [Critérios Anafilaxia](https://www.ncbi.nlm.nih.gov/books/NBK482124/)
