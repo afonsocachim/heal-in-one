@@ -13,7 +13,7 @@ Apenas necessário 1 dos seguintes com início dentro de minutos a horas, não �
   - Sintomas pele e mucosas
 - Exposição conhecida a um antigénio e hipotensão
 
-### Lista sintomas
+### Lista de sintomas
 
 - Pele e mucosas: erupção cutânea, prurido, eritema, urticária, inchaço da face, lábios, língua ou úvula
 - Respiratórios: Dispneia, pieira, estridor, hipoxemia, incapacidade de manter a permeabilidade; tosse persistente e/ou pigarro podem ser sintomas - anunciadores
