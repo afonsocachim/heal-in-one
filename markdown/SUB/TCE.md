@@ -1,9 +1,5 @@
 ## Doente com > 18 anos, com TCE
 
-### Análises
-
-Deve-se pedir hemograma completo, coagulação, ionograma, glicose, alcoolémia e exame toxicológico da urina
-
 ### Critérios para TAC-CE sem constraste
 
 - Escala de Coma de Glasgow < 15
