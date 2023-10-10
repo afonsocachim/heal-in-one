@@ -18,8 +18,8 @@ Deve-se pedir hemograma completo, coagulação, ionograma, glicose, alcoolémia 
 - Antiagregação/Anticoagualação
 
 - Amnésia retrógrada ≥ 30 minutos pré-trauma
-- Mecanismo de alto impacto 
-- Acidente de viação, queda > 1,5 metros, etc.
+- Mecanismo de alto impacto
+  - Acidente de viação, queda > 1,5 metros, etc.
 
 - Intoxicação
 - Cefaleia
