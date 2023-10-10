@@ -9,36 +9,32 @@
 - Convulsões
 - ≥ 2 episódios de vómito
 - ≥ 60 anos de idade
-
 - Coagulopatia
 - Antiagregação/Anticoagualação
-
 - Amnésia retrógrada ≥ 30 minutos pré-trauma
 - Mecanismo de alto impacto
   - Acidente de viação, queda > 1,5 metros, etc.
-
 - Intoxicação
 - Cefaleia
-- Comportamento alterado
+- Alteração do comportamento
   - Agitação excessiva, não cooperante, comportamento violento, etc.
 
 
 ### Critérios para avaliação por neurocirurgia
-- Efeito de massa (compressão da cisterna basal ou deslocamento da linha média)
-- Derrame ou herniação sulcal
-- Hematoma epidural ou subdural substancial (> 1 cm de largura, ou que causa efeito de massa) 
-- Contusão cerebral substancial (> 1 cm de diâmetro, ou mais do que um local)
+- Efeito de massa
+- Hematoma epidural ou subdural
+- Contusão cerebral
 - Hemorragia subaracnoideia extensa, fossa posterior, hemorragia intraventricular ou bilateral
 - Fratura craniana deprimida ou diastásica
-- Pneumocefalia
+- Pneumocéfalo
 - Edema cerebral 
 
-### Critérios para observação em ambulatório
+### Critérios para observação intra-hospitalar
 - Escala de Coma de Glasgow < 15
 - Coagulopatia ou anticoagulação
 - Convulsão
 - Nenhum cuidador responsável em casa
-  - Se não houver um prestador de cuidados responsável em casa, considere a possibilidade de observação ou TAC em regime de internamento, se ainda não tiver sido efectuado.
+  - Se não houver um prestador de cuidados responsável em casa, considere a possibilidade de observação intra-hospitalar ou TAC-CE, se ainda não tiver sido efectuado.
 
 ### Sem critérios TAC-CE
 
