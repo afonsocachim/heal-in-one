@@ -26,8 +26,11 @@ Draw.io torna impossível colaboração, fica Google slides / Powerpoint
 
 ## Colaboração
 
-
+Elaboradoradores
 - Carlota vai fazer 2 no máximo
 - Matilde logo se vê
 - Pedro não vai fazer um caralho e maísa ide em aspas
 
+Revisores
+- Inês Simões
+- David Marques
