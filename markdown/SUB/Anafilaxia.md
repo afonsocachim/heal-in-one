@@ -1,7 +1,7 @@
 ## Critérios clínicos para anafilaxia
 
 ![anafilaxia_criterios](anafilaxia_criterios.svg)
-
+![anafilaxia_abcde](anafilaxia_abcde.svg)
 Apenas necessário 1 dos seguintes com início dentro de minutos a horas, não é necessário cumprir estes critérios para tratar, apenas para servir de guia para o diagnóstico
 - Exposição desconhecida a um antigénio, mas desenvolvimento rápido de urticária ou outros sintomas cutâneos/mucosos associados a qualquer um dos seguintes:
   - Sintomas respiratórios
